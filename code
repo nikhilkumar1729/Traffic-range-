@@ -1,0 +1,30 @@
+// Simple Traffic Light Controller
+// Author: Your Name
+// GitHub Repo: your-repo-name
+
+int redLED = 10;
+int yellowLED = 9;
+int greenLED = 8;
+
+void setup() {
+  pinMode(redLED, OUTPUT);
+  pinMode(yellowLED, OUTPUT);
+  pinMode(greenLED, OUTPUT);
+}
+
+void loop() {
+  // Green Light
+  digitalWrite(greenLED, HIGH);
+  delay(5000);
+  digitalWrite(greenLED, LOW);
+
+  // Yellow Light
+  digitalWrite(yellowLED, HIGH);
+  delay(2000);
+  digitalWrite(yellowLED, LOW);
+
+  // Red Light
+  digitalWrite(redLED, HIGH);
+  delay(5000);
+  digitalWrite(redLED, LOW);
+}
